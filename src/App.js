@@ -1,12 +1,24 @@
 import './App.css';
+import Layout from "./compoents/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Courses from "./pages/Courses";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   return (
     <div className="App">
-      <h1 text-3xl font-bold underline space-y-4>
-        React - Portfolio Tailwind
-      </h1>
-      <button className='bg-red-500 p-2'>Submitt</button>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
