@@ -46,7 +46,7 @@ function Projects() {
           return (
             <div>
               <div className="relative p-10 border-2 text-center rounded-tr-3xl rounded-bl-3xl border-gray-400">
-                <img src={project.image} className="w-full h-52 text-center" />
+                <img src={project.image} className="w-full h-52 text-center"alt="0"/>
 
                 <div className="absolute inset-0 flex items-center justify-center flex-col opacity-0 bg-black hover:opacity-80 rounded-tr-3xl rounded-bl-3xl">
                   <h1 className="text-4xl font-semibold text-white">
